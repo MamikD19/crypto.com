@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>MY_LOGIN_PAGE</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="login_font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <ul>
+                <li><a href="index.html">GO BACK</a></li>
+                <li><a href="registration.html">REGISTER</a></li>
+            </ul><br><br><br>
+        <div class="container">
+            <img src="login_face.png" title="User">
+            <h2><b>Login Details</b></h2>
+        <form>
+        <div class="form-input"><!--input box-->
+            <input type="email" name="Username" required="" title="Enter Your Username"><label>USERNAME</label>
+        </div> 
+        <!--div class="form-input">
+            <input type="password" name="Password" required="" title="Enter Your Password"><label>PASSWORD</label>
+        </div-->
+            <input type="submit" name="submit" value="PASSWORD" title="Click to Login" class="login" onclick="check(this.form)">
+            <input type="reset" name="reset" value="RESET" title="Click to Reset" class="reset"> 
+        </form>
+        </div>
+        <script language="javascript">
+        function check(form)
+            {
+                if(form.Username.value=="1234@gmail.com")
+                    {
+                   	//self.location="login1.html";
+                   	window.open('login1.html')
+                   	
+                    }
+                else{
+                    alert("INVALID USERNAME PLEASE TRY AGAIN!")
+                
+                    }
+                    }
+        </script>
+     </body>
+</html>
